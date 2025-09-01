@@ -13,7 +13,7 @@ const Home = () => {
     <div className="home">
       <div className="movie-grid"></div>
       {movies.map((movie) => (
-        <MovieCard movie={movie} key={id} />
+        <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
   );
