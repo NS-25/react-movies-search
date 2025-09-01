@@ -1,4 +1,5 @@
 import React from "react";
+import MovieCard from "../components/MovieCard";
 
 const Home = () => {
   const movies = [
@@ -11,6 +12,9 @@ const Home = () => {
   return (
     <div className="home">
       <div className="movie-grid"></div>
+      {movies.map((movie) => (
+        <MovieCard movie={movie} key={id} />
+      ))}
     </div>
   );
 };
