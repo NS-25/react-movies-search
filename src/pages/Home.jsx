@@ -9,10 +9,17 @@ const Home = () => {
     { id: 4, title: "Terminator", release_date: "2015" },
     { id: 5, title: "The Matrix", release_date: "2012" },
   ];
+
+  const handleSearch = () => {};
+
   return (
     <div className="home">
-      <form onSubmit={} className="search-form">
-    <input type="text"  placeholder="Search for movies..." className="search-input"/>
+      <form onSubmit={handleSearch} className="search-form">
+        <input
+          type="text"
+          placeholder="Search for movies..."
+          className="search-input"
+        />
       </form>
       <div className="movie-grid"></div>
       {movies.map((movie) => (
