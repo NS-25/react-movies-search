@@ -20,6 +20,9 @@ const Home = () => {
           placeholder="Search for movies..."
           className="search-input"
         />
+        <button type="submit" className="search-button">
+          Search
+        </button>
       </form>
       <div className="movie-grid"></div>
       {movies.map((movie) => (
