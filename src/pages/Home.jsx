@@ -11,6 +11,9 @@ const Home = () => {
   ];
   return (
     <div className="home">
+      <form onSubmit={} className="search-form">
+    <input type="text"  placeholder=""/>
+      </form>
       <div className="movie-grid"></div>
       {movies.map((movie) => (
         <MovieCard key={movie.id} movie={movie} />
