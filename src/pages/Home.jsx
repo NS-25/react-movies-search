@@ -1,7 +1,9 @@
 import React from "react";
 import MovieCard from "../components/MovieCard";
+import { useState } from "react";
 
 const Home = () => {
+  const [searchQuery, setSearchQuery] = useState("");
   const movies = [
     { id: 1, title: "John wick", release_date: "2020" },
     { id: 2, title: "Spider Man", release_date: "2019" },
