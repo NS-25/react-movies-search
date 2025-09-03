@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="home">
       <form onSubmit={} className="search-form">
-    <input type="text"  placeholder=""/>
+    <input type="text"  placeholder="Search for movies..." className="search-input"/>
       </form>
       <div className="movie-grid"></div>
       {movies.map((movie) => (
