@@ -12,7 +12,9 @@ const Home = () => {
     { id: 5, title: "The Matrix", release_date: "2012" },
   ];
 
-  const handleSearch = () => {};
+  const handleSearch = () => {
+    alert(searchQuery);
+  };
 
   return (
     <div className="home">
