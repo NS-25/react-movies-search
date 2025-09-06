@@ -32,12 +32,9 @@ const Home = () => {
         </button>
       </form>
       <div className="movie-grid"></div>
-      {movies.map(
-        (movie) =>
-          movie.title.toLocaleLowerCase().startsWith(searchQuery) && (
-            <MovieCard key={movie.id} movie={movie} />
-          )
-      )}
+      {movies.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
+      ))}
     </div>
   );
 };
